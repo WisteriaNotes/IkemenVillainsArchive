@@ -1,0 +1,345 @@
+
+		html{
+			height: 100%;
+		}
+		
+		body{
+			background: linear-gradient(to top right, rgba(26,11,60,1) 0%, rgba(16,11,22,1) 50%, rgba(54,14,56,1) 100%);
+			background-color: #1a0b3c;
+			font-family: Verdana;
+			margin: 0px;
+			padding: 0px;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+
+		}
+		/*Header*/
+		nav{
+			background-color: #0A0D1E;
+			height: 60px;
+			position: sticky;
+			border-bottom-style: solid;
+			border-bottom-color: #c0b5a3;
+			width: auto;
+			padding-bottom: 10px;
+			margin: 0px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+		}
+
+		.nav-item a, a:link, a:active, a:hover, a:visited{
+
+			display: inline-block;
+			text-decoration: none;
+
+		}
+
+		h1{
+			font-size: 32px;
+			font-family: "Cinzel Decorative", serif;
+			font-weight: 400;
+			font-style: normal;
+			color: #f0f0f0;
+			margin: 10px;
+		}
+
+		.hamburger-menu{
+			display: none;
+		}
+
+
+		.top-links
+		{
+			list-style: none;
+			display: flex;
+		}
+		.top-buttons
+		{
+			position: relative;
+			display: inline-block;
+			padding: 0px 15px;
+			margin-top: 15px;
+		}
+
+		.top-button-out{
+			position: relative;
+			width: 100px;
+			height: 50px;
+			background: #c0b5a3;
+			clip-path: polygon(0% 15%, 10% 10%, 15% 0%, 85% 0%, 90% 10%, 100% 15%, 100% 85%, 90% 90%, 85% 100%, 15% 100%, 10% 89%, 0% 85%);
+			display: flex;
+
+		}
+
+		.top-button-in{
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			bottom: 2px;
+			right: 2px;
+			background: linear-gradient(rgba(87,48,82,1) 0%, rgba(30,33,61,1) 100%);
+			background-color: #573052;
+			clip-path: polygon(0% 15%, 10% 10%, 15% 0%, 85% 0%, 90% 10%, 100% 15%, 100% 85%, 90% 90%, 85% 100%, 15% 100%, 10% 89%, 0% 85%);
+			color: #c0b5a3;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.title
+		{
+			font-style: normal;
+			color:#c0b5a3; 
+			margin-left: 10px;
+			font-size: 30px;
+		}
+		.desc{
+			color:#c0b5a3; 
+			font-style: normal;
+			font-size: 16px; 
+			margin: 10px;
+		}
+
+		/*card*/
+		.card-container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.checkbox{
+			display: none;
+		}
+
+		.filters{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.filters img{
+			width: 30px;
+			cursor: none;
+			
+		}
+
+		.char-button, .star-button{
+			margin: 10px;
+		}
+
+		.filter-button{
+			background-color: #d1c8c9;
+			color: #895579;
+			cursor: pointer;
+			margin: 5px;
+			border-radius: 5px;
+			padding: 5px;
+		}
+
+		#five-star-button, #four-star-button, #three-star-button, #two-star-button{
+			cursor: pointer;
+			font-size: 24px;
+			border-radius: 5px;
+			padding: 0px 5px;
+			margin: 1px;
+		}
+
+		#five-star-button
+		{
+			background-color: #ddc1f4;
+		}
+
+		#four-star-button
+		{
+			background-color: #e5db9c;
+		}
+
+		#three-star-button
+		{
+			background-color: #dcf9f8;
+		}
+
+		#two-star-button
+		{
+			background-color: #dacec5;
+		}
+
+		#William:not(:checked) ~ .filters #william-button,
+		#Harrison:not(:checked) ~ .filters #harrison-button,
+		#Liam:not(:checked) ~ .filters #liam-button,
+		#Elbert:not(:checked) ~ .filters #elbert-button,
+		#Alfons:not(:checked) ~ .filters #alfons-button,
+		#Roger:not(:checked) ~ .filters #roger-button,
+		#Jude:not(:checked) ~ .filters #jude-button,
+		#Ellis:not(:checked) ~ .filters #ellis-button,
+		#Victor:not(:checked) ~ .filters #victor-button,
+		#five-star:not(:checked) ~ .filters #five-star-button,
+		#four-star:not(:checked) ~ .filters #four-star-button,
+		#three-star:not(:checked) ~ .filters #three-star-button,
+		#two-star:not(:checked) ~ .filters #two-star-button
+		{
+			opacity: .5;
+		}
+
+		
+		#William:checked ~ .card-table > :not([category~="william"]),
+		#Harrison:checked ~ .card-table > :not([category~="harrison"]),
+		#Liam:checked ~ .card-table > :not([category~="liam"]),
+		#Elbert:checked ~ .card-table > :not([category~="elbert"]),
+		#Alfons:checked ~ .card-table > :not([category~="alfons"]),
+		#Roger:checked ~ .card-table > :not([category~="roger"]),
+		#Jude:checked ~ .card-table > :not([category~="jude"]),
+		#Ellis:checked ~ .card-table > :not([category~="ellis"]),
+		#Victor:checked ~ .card-table > :not([category~="victor"]),
+		#five-star:checked ~ .card-table > :not([category~="five-star"]),
+		#four-star:checked ~ .card-table > :not([category~="four-star"]),
+		#three-star:checked ~ .card-table > :not([category~="three-star"]),
+		#two-star:checked ~ .card-table > :not([category~="two-star"])
+		{
+			display: none;
+		}
+
+		img {
+			pointer-events: none;
+		}
+
+		.card-table
+		{
+			background-color: #d1c8c9;
+			color: #895579;
+			display: flex;
+			flex-direction: column;
+			width: 75%;
+			border: 1px solid #443f58;
+			margin-top: 20px;
+		}
+
+		.card-row{
+			display: flex;
+			flex-direction: row;
+			border: 1px solid #443f58;
+			width: 100%;
+		}
+
+		.heading{
+			background-color: #895579;
+			color: #d1c8c9;
+			font-weight: bold;
+			align-content: space-around;
+		}
+
+		.card-thumb img{
+			width: 100%;
+			height: auto;
+		}
+
+		.card-contents{
+			display: flex;
+			flex: 1;
+			font-size: 16px;
+			padding: 5px;
+			justify-content: center;
+			align-items: center;
+		}
+		@media (max-width:850px){
+			.gacha-banner{
+				background-color: #d1c8c9;
+				color: #895579;
+				border-radius: 5px;
+				display: flex;
+				flex-direction: column;
+				margin: 10px;
+				width: 60%;
+			}
+			.gacha-banner img{ 
+				width: 100%;
+				height: auto;
+			}
+
+			.header{
+				position: fixed;
+				flex-direction: column;
+				top: 0;
+				height: auto;
+				display: flex;
+				margin: 0px;
+				width: 100%;
+				justify-content: center;
+			}
+
+			#hamburger-menu:not(:checked) ~ .hidden-menu
+			{
+				display: none;
+
+			}
+
+			.header-container{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+
+			.menu-icon, .menu-icon::before, .menu-icon::after{
+				display: block;
+				background-color: #f0f0f0;
+				height: 5px;
+				width: 35px; 
+				position: absolute;
+				cursor: pointer
+				
+			}
+
+			.menu-icon::before{
+				content:'';
+				margin-top: -10px;
+			}
+
+			.menu-icon::after{
+				content:'';
+				margin-top: 10px;
+			}
+
+			.top-links{
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+
+			}
+			.top-buttons{
+				position: relative;
+				display: inline-block;
+				padding: 0px 5px;
+				margin-top: 15px;
+				width: auto;
+			}
+			.top-button-out{
+				position: relative;
+				width: 100px;
+				height:50px;
+				background: #c0b5a3;
+				clip-path: polygon(0% 15%, 10% 10%, 15% 0%, 85% 0%, 90% 10%, 100% 15%, 100% 85%, 90% 90%, 85% 100%, 15% 100%, 10% 89%, 0% 85%);
+				display: flex;
+
+			}
+
+			.top-button-in{
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				bottom: 2px;
+				right: 2px;
+				background: linear-gradient(rgba(87,48,82,1) 0%, rgba(30,33,61,1) 100%);
+				background-color: #573052;
+				clip-path: polygon(0% 15%, 10% 10%, 15% 0%, 85% 0%, 90% 10%, 100% 15%, 100% 85%, 90% 90%, 85% 100%, 15% 100%, 10% 89%, 0% 85%);
+				color: #c0b5a3;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+			}
+		}
