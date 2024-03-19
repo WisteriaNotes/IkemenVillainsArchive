@@ -222,6 +222,7 @@
 			flex-direction: row;
 			border: 1px solid #443f58;
 			width: 100%;
+			flex: 1 1 auto;
 		}
 
 		.heading{
@@ -245,19 +246,6 @@
 			align-items: center;
 		}
 		@media (max-width:850px){
-			.gacha-banner{
-				background-color: #d1c8c9;
-				color: #895579;
-				border-radius: 5px;
-				display: flex;
-				flex-direction: column;
-				margin: 10px;
-				width: 60%;
-			}
-			.gacha-banner img{ 
-				width: 100%;
-				height: auto;
-			}
 
 			.header{
 				position: fixed;
@@ -342,4 +330,18 @@
 				align-items: center;
 
 			}
+
+			.card-table
+		{
+			background-color: #d1c8c9;
+			color: #895579;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			border: 1px solid #443f58;
+			margin-top: 20px;
+		}
+
+
+
 		}
