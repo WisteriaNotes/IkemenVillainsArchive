@@ -46,17 +46,17 @@
 		if(count == 1 || count == 3 || count == 7 || count == 9)
 		{
 			document.getElementById(ids[count]).innerHTML = "<b>Story x2 - </b> " + times[i] + " ~ " + times[i + 1];
+			count++;
 		}
 		else if(count == 2 || count == 6 || count == 13)
 		{
 			document.getElementById(ids[count]).innerHTML = "<b>Escort x3 - </b> " + times[i] + " ~ " + times[i + 1];
-      count++;
+			count++;
 		}
 		else if(count == 4 || count == 5 || count == 8 || count == 10 || count == 11 || count == 12)
-      count++;
 		{
 			document.getElementById(ids[count]).innerHTML = "<b>Escort x2 - </b> " + times[i] + " ~ " + times[i + 1];
-      count++;
+			count++;
 		}
 		
 	}
