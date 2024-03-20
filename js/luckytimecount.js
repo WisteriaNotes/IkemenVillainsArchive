@@ -43,17 +43,17 @@
 		if (!times[i + 1]) {
 			break;
 		}
-		if(count == 1 || count == 3 || count == 7 || count == 9)
+		if(count == 0 || count == 2 || count == 6 || count == 8)
 		{
 			document.getElementById(ids[count]).innerHTML = "<b>Story x2 - </b> " + times[i] + " ~ " + times[i + 1];
 			count++;
 		}
-		else if(count == 2 || count == 6 || count == 13)
+		else if(count == 1 || count == 5 || count == 12)
 		{
 			document.getElementById(ids[count]).innerHTML = "<b>Escort x3 - </b> " + times[i] + " ~ " + times[i + 1];
 			count++;
 		}
-		else if(count == 4 || count == 5 || count == 8 || count == 10 || count == 11 || count == 12)
+		else if(count == 3 || count == 4 || count == 7 || count == 9 || count == 10 || count == 11)
 		{
 			document.getElementById(ids[count]).innerHTML = "<b>Escort x2 - </b> " + times[i] + " ~ " + times[i + 1];
 			count++;
