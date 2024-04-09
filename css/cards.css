@@ -202,6 +202,23 @@
 			display: none;
 		}
 
+		#William:checked ~ .card-table > [category~="william"],
+		#Harrison:checked ~ .card-table > [category~="harrison"],
+		#Liam:checked ~ .card-table > [category~="liam"],
+		#Elbert:checked ~ .card-table > [category~="elbert"],
+		#Alfons:checked ~ .card-table > [category~="alfons"],
+		#Roger:checked ~ .card-table > [category~="roger"],
+		#Jude:checked ~ .card-table > [category~="jude"],
+		#Ellis:checked ~ .card-table > [category~="ellis"],
+		#Victor:checked ~ .card-table > [category~="victor"],
+		#five-star:checked ~ .card-table > [category~="five-star"],
+		#four-star:checked ~ .card-table > [category~="four-star"],
+		#three-star:checked ~ .card-table > [category~="three-star"],
+		#two-star:checked ~ .card-table > [category~="two-star"]
+		{
+			display: flex;
+		}
+
 		img {
 			pointer-events: none;
 		}
