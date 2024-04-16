@@ -181,6 +181,7 @@ html{
 			flex-direction: row;
 			align-items: center;
 			flex-wrap: wrap;
+			
 		}
 
 		.story-event::before{
@@ -222,6 +223,17 @@ html{
 			padding: 5px 10px;
 			margin: 5px;
 		}
+
+		.party-event::before{
+			background-color: #471d47;
+			color: #eeebda;
+			font-size: 18px;
+			border-radius: 5px;
+			content:"Party Event";
+			padding: 5px 10px;
+			margin: 5px;
+		}
+
 		/*Footer*/
 		footer{
 			padding: 10px;
