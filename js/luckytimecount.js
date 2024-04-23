@@ -1,14 +1,16 @@
 	//Lucky Time Calc
 	const timeStr_jp = [
-	"2024-04-12T18:00+09:00","2024-04-13T01:59+09:00",
-	"2024-04-13T12:00+09:00","2024-04-14T01:59+09:00",
-	"2024-04-14T12:00+09:00","2024-04-15T01:59+09:00",
-	"2024-04-15T16:00+09:00","2024-04-15T23:59+09:00",
-	"2024-04-16T16:00+09:00","2024-04-16T23:59+09:00",
-	"2024-04-17T16:00+09:00","2024-04-17T23:59+09:00",
-	"2024-04-18T16:00+09:00","2024-04-18T23:59+09:00",
-	"2024-04-19T12:00+09:00","2024-04-19T23:59+09:00",
-	"2024-04-20T12:00+09:00","2024-04-20T23:59+09:00"
+	"2024-04-23T16:00+09:00","2024-04-23T23:59+09:00",
+	"2024-04-24T05:00+09:00","2024-04-25T04:59+09:00",
+	"2024-04-25T18:00+09:00","2024-04-25T23:59+09:00",
+	"2024-04-26T18:00+09:00","2024-04-26T23:59+09:00",
+	"2024-04-27T05:00+09:00","2024-04-28T04:59+09:00",
+	"2024-04-28T12:00+09:00","2024-04-28T23:59+09:00",
+	"2024-04-29T05:00+09:00","2024-04-30T04:59+09:00",
+	"2024-04-30T18:00+09:00","2024-04-30T23:59+09:00",
+	"2024-05-01T18:00+09:00","2024-05-01T23:59+09:00",
+	"2024-05-02T05:00+09:00","2024-05-03T04:59+09:00",
+	"2024-05-03T05:00+09:00","2024-05-03T22:59+09:00"
 	];
 
 	const timeStr_en = [
@@ -43,7 +45,9 @@
 	"time-6-jp",
 	"time-7-jp",
 	"time-8-jp",
-	"time-9-jp"
+	"time-9-jp",
+	"time-10-jp",
+	"time-11-jp"
 	];
 
 	var ids_en = [
@@ -56,28 +60,28 @@
 	"time-7-en"
 	];
 
-	/*for (let i = 0; i < times.length; i += 2) {
-		if (!times[i + 1]) {
+	for (let i = 0; i < times_jp.length; i += 2) {
+		if (!times_jp[i + 1]) {
 			break;
 		}
-		if(count == 0 || count == 2 || count == 6 || count == 8)
+		if(count_jp == 1 || count_jp == 4 || count_jp == 6 || count_jp == 9)
 		{
-			document.getElementById(ids[count]).innerHTML = "<b>Story x2 - </b> " + times[i] + " ~ " + times[i + 1];
-			count++;
+			document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Story x2 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
+			count_jp++;
 		}
-		else if(count == 1 || count == 5 || count == 12)
+		/*else if(count_jp == 1 || count_jp == 5 || count_jp == 12)
 		{
-			document.getElementById(ids[count]).innerHTML = "<b>Escort x3 - </b> " + times[i] + " ~ " + times[i + 1];
-			count++;
-		}
-		else if(count == 3 || count == 4 || count == 7 || count == 9 || count == 10 || count == 11)
+			document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Escort x3 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
+			count_jp++;
+		}*/
+		else if(count_jp == 0 || count_jp == 2 || count_jp == 3 || count_jp == 5 || count_jp == 7 || count_jp == 8 || count_jp == 10)
 		{
-			document.getElementById(ids[count]).innerHTML = "<b>Escort x2 - </b> " + times[i] + " ~ " + times[i + 1];
-			count++;
+			document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Escort x2 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
+			count_jp++;
 		}
 		
-	}*/
-	for (let i = 0; i < times_jp.length; i += 2) {
+	}
+	/*for (let i = 0; i < times_jp.length; i += 2) {
 		if (!times_jp[i + 1]) {
 			break;
 		}
@@ -85,7 +89,7 @@
 			document.getElementById(ids_jp[count_jp]).innerHTML = times_jp[i] + " ~ " + times_jp[i + 1];
 			count_jp++;
 		}
-	}
+	}*/
 
 	for (let i = 0; i < times_en.length; i += 2) {
 		if (!times_en[i + 1]) {
