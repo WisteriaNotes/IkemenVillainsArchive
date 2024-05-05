@@ -1,17 +1,17 @@
 	//Lucky Time Calc
 	const timeStr_jp = [
-	"2024-04-23T16:00+09:00","2024-04-23T23:59+09:00",
-	"2024-04-24T05:00+09:00","2024-04-25T04:59+09:00",
-	"2024-04-25T18:00+09:00","2024-04-25T23:59+09:00",
-	"2024-04-26T18:00+09:00","2024-04-26T23:59+09:00",
-	"2024-04-27T05:00+09:00","2024-04-28T04:59+09:00",
-	"2024-04-28T12:00+09:00","2024-04-28T23:59+09:00",
-	"2024-04-29T05:00+09:00","2024-04-30T04:59+09:00",
-	"2024-04-30T18:00+09:00","2024-04-30T23:59+09:00",
-	"2024-05-01T18:00+09:00","2024-05-01T23:59+09:00",
-	"2024-05-02T05:00+09:00","2024-05-03T04:59+09:00",
-	"2024-05-03T05:00+09:00","2024-05-03T22:59+09:00"
+	"2024-05-04T18:00+09:00","2024-05-04T23:59+09:00",
+	"2024-05-05T12:00+09:00","2024-05-05T23:59+09:00",
+	"2024-05-06T16:00+09:00","2024-05-06T23:59+09:00",
+	"2024-05-07T18:00+09:00","2024-05-07T23:59+09:00",
+	"2024-05-08T18:00+09:00","2024-05-08T23:59+09:00",
+	"2024-05-09T16:00+09:00","2024-05-09T23:59+09:00",
+	"2024-05-11T18:00+09:00","2024-05-11T23:59+09:00",
+	"2024-05-12T16:00+09:00","2024-05-12T23:59+09:00",
+	"2024-05-13T18:00+09:00","2024-05-13T23:59+09:00",
+	"2024-05-14T16:00+09:00","2024-05-14T22:59+09:00"
 	];
+	
 
 	const timeStr_en = [
 	"2024-05-01T18:00-07:00","2024-05-02T00:00-07:00",
@@ -49,8 +49,7 @@
 	"time-7-jp",
 	"time-8-jp",
 	"time-9-jp",
-	"time-10-jp",
-	"time-11-jp"
+	"time-10-jp"
 	];
 
 	var ids_en = [
@@ -66,7 +65,7 @@
 	"time-10-en"
 	];
 
-	for (let i = 0; i < times_jp.length; i += 2) {
+	/*for (let i = 0; i < times_jp.length; i += 2) {
 		if (!times_jp[i + 1]) {
 			break;
 		}
@@ -75,17 +74,17 @@
 			document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Story x2 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 			count_jp++;
 		}
-		/*else if(count_jp == 1 || count_jp == 5 || count_jp == 12)
+		else if(count_jp == 1 || count_jp == 5 || count_jp == 12)
 		{
 			document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Escort x3 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 			count_jp++;
-		}*/
+		}
 		else if(count_jp == 0 || count_jp == 2 || count_jp == 3 || count_jp == 5 || count_jp == 7 || count_jp == 8 || count_jp == 10)
 		{
 			document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Escort x2 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 			count_jp++;
 		}
-	}
+	}*/
 	for (let i = 0; i < times_en.length; i += 2) {
 		if (!times_en[i + 1]) {
 			break;
@@ -107,7 +106,7 @@
 		}
 	}
 
-	/*for (let i = 0; i < times_jp.length; i += 2) {
+	for (let i = 0; i < times_jp.length; i += 2) {
 		if (!times_jp[i + 1]) {
 			break;
 		}
@@ -115,7 +114,7 @@
 			document.getElementById(ids_jp[count_jp]).innerHTML = times_jp[i] + " ~ " + times_jp[i + 1];
 			count_jp++;
 		}
-	}*/
+	}
 
 	/*for (let i = 0; i < times_en.length; i += 2) {
 		if (!times_en[i + 1]) {
