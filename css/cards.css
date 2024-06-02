@@ -223,6 +223,14 @@
 			pointer-events: none;
 		}
 
+		#asc-button, #desc-button
+		{
+			background-color: transparent;
+			border: none;
+			color: #d1c8c9;
+			cursor: pointer;
+		}
+
 		.card-table
 		{
 			background-color: #d1c8c9;

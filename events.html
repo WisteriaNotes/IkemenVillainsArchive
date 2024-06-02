@@ -4,8 +4,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/events.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/3.2.8/tinysort.min.js"></script>
 	</head>
-	<body>
+	<body onload="addID()">
 		<!--Header-->
 		<nav class="header">
 			<input class="hamburger-menu" type="checkbox" id="hamburger-menu"/>
@@ -51,6 +52,10 @@
 			<div class="filters">
 				<label class="filter-button" for="story" id="story-button">Story Event</label>
 				<label class="filter-button" for="collection" id="collection-button">Collection Event</label>
+			</div>
+			<div class="button sort" style="padding:10px;">
+				<button id="asc-button" onclick="sort_list('ascend')";>Newest</button>
+				<button id="desc-button" onclick="sort_list('descend')";>Oldest</button>
 			</div>
 			<div class="event-card story">
 				<img src="https://storage.googleapis.com/ikemen-villains-archive/event_jpg/e35.jpg">
@@ -515,6 +520,28 @@
 
 		<!--Footer-->
 		<footer>
+			<script>
+			function addID(){
+		  		eventList = document.querySelectorAll(".event-card");
+		  		for(let i = 0; i < eventList.length; i++)
+		  		{
+		  			eventList[i].id = i;
+		  		}	
+			}
+			function sort_list(o){
+				
+			  var order = o;
+			  
+			  if(order == 'ascend')
+				{
+			    tinysort('.event-card',{attr: 'id',  order: 'asc'});
+			  }
+			  else if(order == 'descend')
+				{
+			    tinysort('.event-card',{attr: 'id',  order: 'desc'});
+			  }
+			}
+		</script>
 			<p> 当ページは、株式会社サイバード「イケメンヴィラン」の画像を使用しております。
 				使用画像の転載・配布等は禁止しております。
 			©CYBIRD</p>

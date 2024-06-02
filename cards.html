@@ -4,11 +4,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/cards.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/3.2.8/tinysort.min.js"></script>
 </head>
-<body>
+<body onload="addID()">
 	<!--Header-->
 	<nav class="header">
 		<input class="hamburger-menu" type="checkbox" id="hamburger-menu"/>
@@ -84,8 +82,8 @@
 			</div>
 		</div>
 		<div class="card-row heading" category="william harrison liam elbert alfons roger jude ellis victor five-star four-star three-star two-star">
-			<div class="card-contents">ID</div>
-			<!--<div class="card-contents">ID<button id="asc-button" onclick="sort_list('ascend')";>↑</button><button id="desc-button" onclick="sort_list('descend')";>↓</button></div> -->
+			<!--<div class="card-contents">ID</div>-->
+			<div class="card-contents">ID<button id="asc-button" onclick="sort_list('ascend')";>↑</button><button id="desc-button" onclick="sort_list('descend')";>↓</button></div>
 			<div class="card-contents">Thumbnail</div>
 			<div class="card-contents">Name (JP)</div>
 			<div class="card-contents">Rarity</div>
@@ -1586,7 +1584,16 @@
 	</div>
 	<!--Footer-->
 	<footer>
-		<!--<script src="js/cards.js"></script>-->
+		<script>
+		  function addID(){
+		  	rowList = document.querySelectorAll(".card-row");
+		  for(let i = 0; i < rowList.length; i++)
+		  {
+		  	rowList[i].id = i;
+		  }
+		}
+		</script>
+		<script src="js/cards.js"></script>
 		<p> 当ページは、株式会社サイバード「イケメンヴィラン」の画像を使用しております。
 			使用画像の転載・配布等は禁止しております。
 		©CYBIRD</p>
