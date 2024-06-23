@@ -146,15 +146,15 @@ html{
 		}
 
 
-		#William:checked ~ .grid > :not([character~="william"]),
-		#Harrison:checked ~ .grid > :not([character~="harrison"]),
-		#Liam:checked ~ .grid > :not([character~="liam"]),
-		#Elbert:checked ~ .grid > :not([character~="elbert"]),
-		#Alfons:checked ~ .grid > :not([character~="alfons"]),
-		#Roger:checked ~ .grid > :not([character~="roger"]),
-		#Jude:checked ~ .grid > :not([character~="jude"]),
-		#Ellis:checked ~ .grid > :not([character~="ellis"]),
-		#Victor:checked ~ .grid > :not([character~="victor"])
+		#William:checked ~ .paginate > .grid > :not([character~="william"]),
+		#Harrison:checked ~ .paginate > .grid > :not([character~="harrison"]),
+		#Liam:checked ~ .paginate > .grid > :not([character~="liam"]),
+		#Elbert:checked ~ .paginate > .grid > :not([character~="elbert"]),
+		#Alfons:checked ~ .paginate > .grid > :not([character~="alfons"]),
+		#Roger:checked ~ .paginate > .grid > :not([character~="roger"]),
+		#Jude:checked ~ .paginate > .grid > :not([character~="jude"]),
+		#Ellis:checked ~ .paginate > .grid > :not([character~="ellis"]),
+		#Victor:checked ~ .paginate > .grid > :not([character~="victor"])
 		{
 			display: none;
 		}
@@ -210,6 +210,33 @@ html{
 			text-wrap: wrap;
 
 		}
+
+		.pager{
+			display: flex;
+		 	justify-content: center;
+  			align-items: center;
+		}
+
+		.pager div{
+			float: left;
+			font-size: 30px;
+			background-color: #d1c8c9;
+			border: 3px solid black;
+			margin: 5px;
+		}
+
+		.pager div.disabled{
+			opacity: 0.25;
+		}
+
+		.pager .pageNumbers a{
+			display: inline-block;
+		    padding: 0 10px;
+		}
+
+		.pager .pageNumbers a.active{
+			color: #895579;
+		}
 		
 		/*Footer*/
 		footer{
@@ -228,7 +255,7 @@ html{
 				display: flex;
 				flex-direction: column;
 				margin: 10px;
-				width: 601%;
+				width: 60%;
 		  	}
 		  	.gacha-banner img{ 
 			    width: 100%;

@@ -1,6 +1,6 @@
 $(".paginate").paginga({
-  itemsPerPage: 5,
-  itemsContainer:".event-container",
+  itemsPerPage: 8,
+  itemsContainer:".grid",
   nextPage: ".nextPage",
   previousPage: ".previousPage",
   firstPage: ".firstPage",

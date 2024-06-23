@@ -1,63 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" >
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/events.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/3.2.8/tinysort.min.js"></script>
-	</head>
-	<body onload="addID()">
-		<!--Header-->
-		<nav class="header">
-			<input class="hamburger-menu" type="checkbox" id="hamburger-menu"/>
-			<div class ="header-container">
-				<a href="index.html">
-					<h1>Ikémen Villains</h1>
-				</a>
-				<label class="menu-button" for="hamburger-menu"> 
-					<div class="menu-icon"></div>
-				</label>
-			</div>
-
-			<div class = "hidden-menu">
-				<ul class="top-links">
-
-					<li class="top-buttons"><a href="events.html">
-						<div class="top-button-out">
-							<div class="top-button-in">Events</div>
-						</div>
-					</a></li>
-					<li class="top-buttons"><a href="gacha.html">
-						<div class="top-button-out">
-							<div class="top-button-in">Gacha</div>
-						</div>
-					</a></li>
-					<li class="top-buttons"><a href="cards.html">
-						<div class="top-button-out">
-							<div class="top-button-in">Cards</div>
-						</div>
-					</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div class="title">
-			<p>Events</p>
+</head>
+<body>
+	<nav class="header">
+		<input class="hamburger-menu" type="checkbox" id="hamburger-menu"/>
+		<div class ="header-container">
+			<a href="index.html">
+				<h1>Ikémen Villains</h1>
+			</a>
+			<label class="menu-button" for="hamburger-menu"> 
+				<div class="menu-icon"></div>
+			</label>
 		</div>
-		<div class="desc">
-			<p> This page lists the events held in Ikémen Villains over the course of its Japanese version's service. Translations to the event titles will be added as they are announced in the English version. EN dates are in PT. <br><b>Events are not guaranteed to release in this order in the English version.</b> </p>
+
+		<div class = "hidden-menu">
+			<ul class="top-links">
+
+				<li class="top-buttons"><a href="events.html">
+					<div class="top-button-out">
+						<div class="top-button-in">Events</div>
+					</div>
+				</a></li>
+				<li class="top-buttons"><a href="gacha.html">
+					<div class="top-button-out">
+						<div class="top-button-in">Gacha</div>
+					</div>
+				</a></li>
+				<li class="top-buttons"><a href="cards.html">
+					<div class="top-button-out">
+						<div class="top-button-in">Cards</div>
+					</div>
+				</a></li>
+			</ul>
 		</div>
+	</nav>
+	<div class="title">
+		<p>Events</p>
+	</div>
+	<div class="desc">
+		<p> This page lists the events held in Ikémen Villains over the course of its Japanese version's service. Translations to the event titles will be added as they are announced in the English version. EN dates are in PT. <br><b>Events are not guaranteed to release in this order in the English version.</b> </p>
+	</div>
+	<input class= "checkbox" type="checkbox" id="story" checked/>
+	<input class="checkbox" type="checkbox" id="collection" checked/>
+	<div class="filters">
+		<label class="filter-button" for="story" id="story-button">Story Event</label>
+		<label class="filter-button" for="collection" id="collection-button">Collection Event</label>
+	</div>
+	<div class="paginate">
 		<div class="event-container">
-			<input class= "checkbox" type="checkbox" id="story" checked/>
-			<input class="checkbox" type="checkbox" id="collection" checked/>
-			<div class="filters">
-				<label class="filter-button" for="story" id="story-button">Story Event</label>
-				<label class="filter-button" for="collection" id="collection-button">Collection Event</label>
-			</div>
-			<div class="button sort" style="padding:10px;">
-				<button id="asc-button" onclick="sort_list('ascend')";>Newest</button>
-				<button id="desc-button" onclick="sort_list('descend')";>Oldest</button>
-			</div>
-			<div class="event-card story">
+			<div class="event-card collection">
 				<img src="https://storage.googleapis.com/ikemen-villains-archive/event_jpg/e36.jpg">
 				<div class="event-contents">
 					<h2>漆黒の花嫁に真実の誓いを</h2>
@@ -544,38 +539,27 @@
 					<p><b>Characters:</b> William, Liam, Elbert, Roger, Jude</p>  
 				</div>
 			</div>
+
 		</div>
+		<div class="pager">
+			<div class="firstPage disabled">&laquo;</div>
+		    <div class="previousPage disabled">&lsaquo;</div>
+		    <div class="pageNumbers"></div>
+		    <div class="nextPage">&rsaquo;</div>
+		    <div class="lastPage">&raquo;</div>
+		</div>
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+	<script src='https://cdn.rawgit.com/mrk-j/paginga/v0.8.1/paginga.jquery.min.js'></script>
+	<script  src="js/eventspage.js"></script>
+	<footer>
+		<p> 当ページは、株式会社サイバード「イケメンヴィラン」の画像を使用しております。
+			使用画像の転載・配布等は禁止しております。
+		©CYBIRD</p>
+		<p> This page uses images from 「Ikémen Villains」 by CYBIRD Co., Ltd. Reproduction or distribution of the images used is prohibited.
+		©CYBIRD</p>
+	</footer>
 
+</body>
 
-		<!--Footer-->
-		<footer>
-			<script>
-			function addID(){
-		  		eventList = document.querySelectorAll(".event-card");
-		  		for(let i = 0; i < eventList.length; i++)
-		  		{
-		  			eventList[i].id = i;
-		  		}	
-			}
-			function sort_list(o){
-				
-			  var order = o;
-			  
-			  if(order == 'ascend')
-				{
-			    tinysort('.event-card',{attr: 'id',  order: 'asc'});
-			  }
-			  else if(order == 'descend')
-				{
-			    tinysort('.event-card',{attr: 'id',  order: 'desc'});
-			  }
-			}
-		</script>
-			<p> 当ページは、株式会社サイバード「イケメンヴィラン」の画像を使用しております。
-				使用画像の転載・配布等は禁止しております。
-			©CYBIRD</p>
-			<p> This page uses images from 「Ikémen Villains」 by CYBIRD Co., Ltd. Reproduction or distribution of the images used is prohibited.
-			©CYBIRD</p>
-		</footer>
-	</body>
-	</html>
+</html>

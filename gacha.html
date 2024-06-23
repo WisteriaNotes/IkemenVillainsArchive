@@ -6,9 +6,9 @@
 	<link rel="stylesheet" href="css/gacha.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/3.2.8/tinysort.min.js"></script>
 
-<body onload="addID()">
-	<!--Header-->
-	<nav class="header">
+	<body>
+		<!--Header-->
+		<nav class="header">
 			<input class="hamburger-menu" type="checkbox" id="hamburger-menu"/>
 			<div class ="header-container">
 				<a href="index.html">
@@ -40,446 +40,434 @@
 				</ul>
 			</div>
 		</nav>
-	<div class="title">
-		<p>Gacha</p>
-	</div>
-	<div class="desc">
-		<p> This page lists the gacha banners held in Ikémen Villains over the course of its Japanese version's service. Translations to the gacha titles will be added as they are announced in the English version. EN dates are in PT. <br><b>Gacha banners are not guaranteed to release in this order in the English version.</b></p>
-	</div>
-	<div class="gacha-container">
-		<input class="checkbox" type="checkbox" id="William"/>
-		<input class="checkbox"  type="checkbox" id="Harrison"/>
-		<input class="checkbox"  type="checkbox" id="Liam"/>
-		<input class="checkbox"  type="checkbox" id="Elbert"/>
-		<input class="checkbox"  type="checkbox" id="Alfons"/>
-		<input class="checkbox"  type="checkbox" id="Roger"/>
-		<input class="checkbox"  type="checkbox" id="Jude"/>
-		<input class="checkbox"  type="checkbox" id="Ellis"/>
-		<input class="checkbox"  type="checkbox" id="Victor"/>
-		<div class="filters">
-			<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/william.png'><label class="filter-button" for="William" id="william-button">William</label>
-			<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/harrison.png'><label class="filter-button" for="Harrison" id="harrison-button">Harrison</label>
-			<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/liam.png'><label class="filter-button" for="Liam" id="liam-button">Liam</label>
-			<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/elbert.png'><label class="filter-button" for="Elbert" id="elbert-button">Elbert</label>
-			<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/alfons.png'><label class="filter-button" for="Alfons" id="alfons-button">Alfons</label>
-			<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/roger.png'><label class="filter-button" for="Roger" id="roger-button">Roger</label>
-			<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/jude.png'><label class="filter-button" for="Jude" id="jude-button">Jude</label>
-			<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/ellis.png'><label class="filter-button" for="Ellis" id="ellis-button">Ellis</label>
-			<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/victor.png'><label class="filter-button" for="Victor" id="victor-button">Victor</label>
+		<div class="title">
+			<p>Gacha</p>
 		</div>
-		<div class="button sort" style="padding:10px;">
-			<button id="asc-button" onclick="sort_list('ascend')";>Newest</button>
-			<button id="desc-button" onclick="sort_list('descend')";>Oldest</button>
+		<div class="desc">
+			<p> This page lists the gacha banners held in Ikémen Villains over the course of its Japanese version's service. Translations to the gacha titles will be added as they are announced in the English version. EN dates are in PT. <br><b>Gacha banners are not guaranteed to release in this order in the English version.</b></p>
 		</div>
-		<div class="grid">
-			<div class="gacha-banner" character="william liam">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g7.jpg">
-				<div class="gacha-contents">
-					<h2>Wedding Lily Part 2 (rerun) </h2>
-					<p><b>Date (JP):</b> Jun 10, 2024 ~ Jul 30, 2024</p>
-					<p><b>Characters: </b>William 5★, Liam 5★</p>
-				</div>
+		<div class="gacha-container">
+			<input class="checkbox" type="checkbox" id="William"/>
+			<input class="checkbox"  type="checkbox" id="Harrison"/>
+			<input class="checkbox"  type="checkbox" id="Liam"/>
+			<input class="checkbox"  type="checkbox" id="Elbert"/>
+			<input class="checkbox"  type="checkbox" id="Alfons"/>
+			<input class="checkbox"  type="checkbox" id="Roger"/>
+			<input class="checkbox"  type="checkbox" id="Jude"/>
+			<input class="checkbox"  type="checkbox" id="Ellis"/>
+			<input class="checkbox"  type="checkbox" id="Victor"/>
+			<div class="filters">
+				<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/william.png'><label class="filter-button" for="William" id="william-button">William</label>
+				<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/harrison.png'><label class="filter-button" for="Harrison" id="harrison-button">Harrison</label>
+				<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/liam.png'><label class="filter-button" for="Liam" id="liam-button">Liam</label>
+				<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/elbert.png'><label class="filter-button" for="Elbert" id="elbert-button">Elbert</label>
+				<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/alfons.png'><label class="filter-button" for="Alfons" id="alfons-button">Alfons</label>
+				<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/roger.png'><label class="filter-button" for="Roger" id="roger-button">Roger</label>
+				<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/jude.png'><label class="filter-button" for="Jude" id="jude-button">Jude</label>
+				<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/ellis.png'><label class="filter-button" for="Ellis" id="ellis-button">Ellis</label>
+				<img src='https://storage.googleapis.com/ikemen-villains-archive/icons/victor.png'><label class="filter-button" for="Victor" id="victor-button">Victor</label>
 			</div>
-			<div class="gacha-banner" character="alfons roger">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g41.jpg">
-				<div class="gacha-contents">
-					<h2>Wedding Lily Part 4</h2>
-					<p><b>Date (JP):</b> Jun 1, 2024 ~ Jun 30, 2024</p>
-					<p><b>Characters: </b>Alfons 5★, Roger 5★</p>
+			<div class="paginate">
+				<div class="grid">
+					<div class="gacha-banner" character="william liam">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g7.jpg">
+						<div class="gacha-contents">
+							<h2>Wedding Lily Part 2 (rerun) </h2>
+							<p><b>Date (JP):</b> Jun 10, 2024 ~ Jul 30, 2024</p>
+							<p><b>Characters: </b>William 5★, Liam 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="alfons roger">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g41.jpg">
+						<div class="gacha-contents">
+							<h2>Wedding Lily Part 4</h2>
+							<p><b>Date (JP):</b> Jun 1, 2024 ~ Jun 30, 2024</p>
+							<p><b>Characters: </b>Alfons 5★, Roger 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="harrison">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g40.jpg">
+						<div class="gacha-contents">
+							<h2>Harrison Pickup</h2>
+							<p><b>Date (JP):</b> May 20, 2024 ~ Jun 2, 2024</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="harrison elbert">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g6_2.jpg">
+						<div class="gacha-contents">
+							<h2>Wedding Lily Part 1 (rerun)</h2>
+							<p><b>Date (JP):</b> May 17, 2024 ~ Jun 10, 2024</p>
+							<p><b>Characters: </b>Elbert 5★, Harrison 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="jude liam william">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g39.jpg">
+						<div class="gacha-contents">
+							<h2>一夜限りの舞踏会</h2>
+							<p><b>Date (JP):</b> May 9, 2024 ~ June 5, 2024</p>
+							<p><b>Characters: </b> Jude 5★, Liam 4★, William 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="ellis victor">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g38.jpg">
+						<div class="gacha-contents">
+							<h2>Wedding Lily Part 3</h2>
+							<p><b>Date (JP):</b> May 1, 2024 ~ June 1, 2024</p>
+							<p><b>Characters: </b> Ellis 5★, Victor 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g37.jpg">
+						<div class="gacha-contents">
+							<h2>William Pickup</h2>
+							<p><b>Date (JP):</b> Apr 17, 2024 ~ Apr 30, 2024</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="elbert alfons">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g36.jpg">
+						<div class="gacha-contents">
+							<h2>Villain's Bath Time Part 2</h2>
+							<p><b>Date (JP):</b> Apr 16, 2024 ~ May 11, 2024</p>
+							<p><b>Characters: </b> Elbert 5★, Alfons 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william liam alfons roger jude victor">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g35.jpg">
+						<div class="gacha-contents">
+							<h2>Eye Wear</h2>
+							<p><b>Date (JP):</b> Apr 1, 2024 ~ Apr 25, 2024</p>
+							<p><b>Characters: </b> Roger 5★, William 4★, Liam 3★, Alfons 3★, Jude 3★, Victor 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="jude victor ellis">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g34.jpg">
+						<div class="gacha-contents">
+							<h2>1st Anniversary Part 3</h2>
+							<p><b>Date (JP):</b> Mar 28, 2024 ~ May 6, 2024</p>
+							<p><b>Characters: </b> Jude 5★, Victor 5★, Ellis 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="elbert alfons roger">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g33.jpg">
+						<div class="gacha-contents">
+							<h2>1st Anniversary Part 2</h2>
+							<p><b>Date (JP):</b> Mar 15, 2024 ~ Apr 21, 2024</p>
+							<p><b>Characters: </b> Alfons 5★, Elbert 5★, Roger 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="jude ellis">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g32.jpg">
+						<div class="gacha-contents">
+							<h2>会報誌表紙記念IFC</h2>
+							<p><b>Date (JP):</b> Mar 2, 2024 ~ Mar 31, 2024</p>
+							<p><b>Characters: </b> Jude 5★, Ellis 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william harrison liam">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g31.jpg">
+						<div class="gacha-contents">
+							<h2>1st Anniversary Part1</h2>
+							<p><b>Date (JP):</b> Mar 1, 2024 ~ Apr 7, 2024</p>
+							<p><b>Characters: </b> Liam 5★, William 5★, Harrison 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="victor">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g30.jpg">
+						<div class="gacha-contents">
+							<h2>Victor Pickup</h2>
+							<p><b>Date (JP):</b> Feb 12, 2024 ~ Feb 26, 2024</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william jude">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g9_2.jpg">
+						<div class="gacha-contents">
+							<h2>魅惑の豪華客船 (rerun)</h2>
+							<p><b>Date (JP):</b> Feb 9, 2024 ~ Feb 18, 2024</p>
+							<p><b>Characters: </b> Jude 5★, William 4★, Victor 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="jude alfons harrison">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g29.jpg">
+						<div class="gacha-contents">
+							<h2>Dear My Valentine</h2>
+							<p><b>Date (JP):</b> Feb 2, 2024 ~ Feb 29, 2024</p>
+							<p><b>Characters: </b> Alfons 5★, Jude 4★, Harrison 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="jude ellis">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g28.jpg">
+						<div class="gacha-contents">
+							<h2>Style Change Part 2</h2>
+							<p><b>Date (JP):</b> Jan 20, 2024 ~ Feb 18, 2024</p>
+							<p><b>Characters: </b> Ellis 5★, Jude 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="elbert">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g27.jpg">
+						<div class="gacha-contents">
+							<h2>Elbert Pickup</h2>
+							<p><b>Date (JP):</b> Jan 16, 2024 ~ Jan 31, 2024</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william victor">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g26.jpg">
+						<div class="gacha-contents">
+							<h2>Style Change Part 1</h2>
+							<p><b>Date (JP):</b> Jan 3, 2024 ~ Jan 31, 2024</p>
+							<p><b>Characters: </b> Victor 5★, William 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g25.jpg">
+						<div class="gacha-contents">
+							<h2>Dream New Year</h2>
+							<p><b>Date (JP):</b> Jan 1, 2024 ~ Jan 10, 2024</p>
+							<p>Rate up on past gacha</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="alfons elbert">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g17_2.jpg">
+						<div class="gacha-contents">
+							<h2>AGF記念 アルカナカード Part 3 (rerun)</h2>
+							<p><b>Date (JP):</b> Dec 26, 2023 ~ Dec 31, 2023</p>
+							<p><b>Characters: </b> Alfons 5★, Elbert 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="harrison jude">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g16_2.jpg">
+						<div class="gacha-contents">
+							<h2>AGF記念 アルカナカード Part 2 (rerun)</h2>
+							<p><b>Date (JP):</b> Dec 26, 2023 ~ Dec 31, 2023</p>
+							<p><b>Characters: </b> Jude 5★, Harrison 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william liam">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g15_2.jpg">
+						<div class="gacha-contents">
+							<h2>AGF記念 アルカナカード Part 1 (rerun)</h2>
+							<p><b>Date (JP):</b> Dec 26, 2023 ~ Dec 31, 2023</p>
+							<p><b>Characters: </b> Liam 5★, William 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="harrison liam elbert">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g24.jpg">
+						<div class="gacha-contents">
+							<h2>Winter Date</h2>
+							<p><b>Date (JP):</b> Dec 16, 2023 ~ Jan 5, 2024</p>
+							<p><b>Characters: </b> Elbert 5★, Harrison 4★, Liam 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="jude">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g23.jpg">
+						<div class="gacha-contents">
+							<h2>Jude Pickup</h2>
+							<p><b>Date (JP):</b> Dec 5, 2023 ~ Jan 20, 2024</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="roger ellis william">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g22.jpg">
+						<div class="gacha-contents">
+							<h2>Christmas Date</h2>
+							<p><b>Date (JP):</b> Dec 1, 2023 ~ Dec 20, 2023</p>
+							<p><b>Characters: </b> Roger 5★, Ellis 4★, William 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="ellis victor">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g21.jpg">
+						<div class="gacha-contents">
+							<h2>Villain's Bath Time Part 2</h2>
+							<p><b>Date (JP):</b> Nov 16, 2023 ~ Dec 15, 2023</p>
+							<p><b>Characters: </b> Victor 5★, Ellis 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="roger">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g20.jpg">
+						<div class="gacha-contents">
+							<h2>Roger Pickup</h2>
+							<p><b>Date (JP):</b> Nov 15, 2023 ~ Nov 30, 2023</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="liam jude">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g19.jpg">
+						<div class="gacha-contents">
+							<h2>Villain's Bath Time Part 1</h2>
+							<p><b>Date (JP):</b> Nov 1, 2023 ~ Nov 30, 2023</p>
+							<p><b>Characters: </b> Jude 5★, Liam 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="ellis victor">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g18.jpg">
+						<div class="gacha-contents">
+							<h2>Villain's Halloween Night Part 2</h2>
+							<p><b>Date (JP):</b> Oct 3, 2023 ~ Oct 31, 2023</p>
+							<p><b>Characters: </b> Ellis 5★, Victor 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="alfons elbert">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g17.jpg">
+						<div class="gacha-contents">
+							<h2>AGF記念 アルカナカード Part 3</h2>
+							<p><b>Date (JP):</b> Oct 31, 2023 ~ Oct 31, 2023</p>
+							<p><b>Characters: </b> Alfons 5★, Elbert 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="harrison jude">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g16.jpg">
+						<div class="gacha-contents">
+							<h2>AGF記念 アルカナカード Part 2</h2>
+							<p><b>Date (JP):</b> Oct 1, 2023 ~ Oct 31, 2023</p>
+							<p><b>Characters: </b> Jude 5★, Harrison 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william liam">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g15.jpg">
+						<div class="gacha-contents">
+							<h2>AGF記念 アルカナカード Part 1</h2>
+							<p><b>Date (JP):</b> Oct 1, 2023 ~ Oct 31, 2023</p>
+							<p><b>Characters: </b> Liam 5★, William 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="elbert roger">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g14.jpg">
+						<div class="gacha-contents">
+							<h2>Villain's Halloween Night Part 1</h2>
+							<p><b>Date (JP):</b> Sep 22, 2023 ~ Oct 22, 2023</p>
+							<p><b>Characters: </b> Elbert 5★, Roger 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="liam">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g13.jpg">
+						<div class="gacha-contents">
+							<h2>Liam Pickup</h2>
+							<p><b>Date (JP):</b> Sep 9, 2023 ~ Sep 20, 2023</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="harrison victor elbert">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g12.jpg">
+						<div class="gacha-contents">
+							<h2>Villain's Routine</h2>
+							<p><b>Date (JP):</b> Sep 3, 2023 ~ Sep 30, 2023</p>
+							<p><b>Characters: </b> Harrison 5★, Victor 4★, Elbert 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="alfons">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g11.jpg">
+						<div class="gacha-contents">
+							<h2>Alfons Pickup</h2>
+							<p><b>Date (JP):</b> Aug 5, 2023 ~ Aug 20, 2023</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="alfons roger ellis">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g10.jpg">
+						<div class="gacha-contents">
+							<h2>Summer Temptation</h2>
+							<p><b>Date (JP):</b> Aug 3, 2023 ~ Aug 31, 2023</p>
+							<p><b>Characters: </b> Ellis 5★, Roger 4★, Alfons 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william jude">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g9.jpg">
+						<div class="gacha-contents">
+							<h2>魅惑の豪華客船</h2>
+							<p><b>Date (JP):</b> Jul 3, 2023 ~ Jul 31, 2023</p>
+							<p><b>Characters: </b> Jude 5★, William 4★, Victor 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="ellis">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g8.jpg">
+						<div class="gacha-contents">
+							<h2>Ellis Pickup</h2>
+							<p><b>Date (JP):</b> Jul 1, 2023 ~ Jul 15, 2023</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william liam">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g7.jpg">
+						<div class="gacha-contents">
+							<h2>Wedding Lily Part 2</h2>
+							<h3>(Wedding Lilies Vol. 2)</h3>
+							<p><b>Date (JP):</b> Jun 20, 2023 ~ Jul 20, 2023</p>
+							<p><b>Date (EN):</b> Jun 19, 2024 ~ Jul 19, 2024</p>
+							<p><b>Characters: </b>William 5★, Liam 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="harrison elbert">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g6.jpg">
+						<div class="gacha-contents">
+							<h2>Wedding Lily Part 1</h2>
+							<h3>(Wedding Lilies Vol. 1)</h3>
+							<p><b>Date (JP):</b> Jun 7, 2023 ~ Jun 30, 2023</p>
+							<p><b>Date (EN):</b> Jun 6, 2024 ~ Jun 29, 2024</p>
+							<p><b>Characters: </b>Elbert 5★, Harrison 5★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="harrison">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g5.jpg">
+						<div class="gacha-contents">
+							<h2>Harrison Pickup</h2>
+							<h3>(Harrison's Spotlight)</h3>
+							<p><b>Date (JP):</b> May 29, 2023 ~ Jun 13, 2023</p>
+							<p><b>Date (EN):</b> May 28, 2023 ~ Jun 8, 2023</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="alfons victor">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g4.jpg">
+						<div class="gacha-contents">
+							<h2>素顔のあなた</h2>
+							<h3>(Hidden Talents)</h3>
+							<p><b>Date (JP):</b> May 12, 2023 ~ Jun 6, 2023</p>
+							<p><b>Date (EN):</b> May 12, 2024 ~ Jun 6, 2023</p>
+							<p><b>Characters: </b>Victor 5★, Alfons 4★, Ellis 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g3.jpg">
+						<div class="gacha-contents">
+							<h2>William Pickup</h2>
+							<h3>(William's Spotlight)</h3>
+							<p><b>Date (JP):</b> Apr 23, 2023 ~ May 8, 2023</p>
+							<p><b>Date (EN):</b> Apr 22, 2024 ~ May 7, 2024</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="harrison liam">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g2.jpg">
+						<div class="gacha-contents">
+							<h2>甘い誘惑</h2>
+							<h3>(Sweet Seductions)</h3>
+							<p><b>Date (JP):</b> Apr 20, 2023 ~ May 15, 2023</p>
+							<p><b>Date (EN):</b> Apr 18, 2024 ~ May 13, 2024</p>
+							<p><b>Characters: </b>Harrison 5★, Liam 4★, Elbert 3★</p>
+						</div>
+					</div>
+					<div class="gacha-banner" character="william harrison liam elbert victor">
+						<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g1.jpg">
+						<div class="gacha-contents">
+							<h2>リリース記念カード</h2>
+							<h3>(Release Celebration Card)</h3>
+							<p><b>Date (JP):</b> Mar 28, 2023 ~ Apr 28, 2023</p>
+							<p><b>Date (EN):</b> Apr 8, 2024 ~ May 30, 2024</p>
+							<p><b>Characters: </b>Liam 5★, Harrison 5★, William 5★, Elbert 5★, Victor 5★</p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="gacha-banner" character="harrison">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g40.jpg">
-				<div class="gacha-contents">
-					<h2>Harrison Pickup</h2>
-					<p><b>Date (JP):</b> May 20, 2024 ~ Jun 2, 2024</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="harrison elbert">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g6_2.jpg">
-				<div class="gacha-contents">
-					<h2>Wedding Lily Part 1 (rerun)</h2>
-					<p><b>Date (JP):</b> May 17, 2024 ~ Jun 10, 2024</p>
-					<p><b>Characters: </b>Elbert 5★, Harrison 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="jude liam william">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g39.jpg">
-				<div class="gacha-contents">
-					<h2>一夜限りの舞踏会</h2>
-					<p><b>Date (JP):</b> May 9, 2024 ~ June 5, 2024</p>
-					<p><b>Characters: </b> Jude 5★, Liam 4★, William 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="ellis victor">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g38.jpg">
-				<div class="gacha-contents">
-					<h2>Wedding Lily Part 3</h2>
-					<p><b>Date (JP):</b> May 1, 2024 ~ June 1, 2024</p>
-					<p><b>Characters: </b> Ellis 5★, Victor 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g37.jpg">
-				<div class="gacha-contents">
-					<h2>William Pickup</h2>
-					<p><b>Date (JP):</b> Apr 17, 2024 ~ Apr 30, 2024</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="elbert alfons">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g36.jpg">
-				<div class="gacha-contents">
-					<h2>Villain's Bath Time Part 2</h2>
-					<p><b>Date (JP):</b> Apr 16, 2024 ~ May 11, 2024</p>
-					<p><b>Characters: </b> Elbert 5★, Alfons 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william liam alfons roger jude victor">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g35.jpg">
-				<div class="gacha-contents">
-					<h2>Eye Wear</h2>
-					<p><b>Date (JP):</b> Apr 1, 2024 ~ Apr 25, 2024</p>
-					<p><b>Characters: </b> Roger 5★, William 4★, Liam 3★, Alfons 3★, Jude 3★, Victor 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="jude victor ellis">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g34.jpg">
-				<div class="gacha-contents">
-					<h2>1st Anniversary Part 3</h2>
-					<p><b>Date (JP):</b> Mar 28, 2024 ~ May 6, 2024</p>
-					<p><b>Characters: </b> Jude 5★, Victor 5★, Ellis 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="elbert alfons roger">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g33.jpg">
-				<div class="gacha-contents">
-					<h2>1st Anniversary Part 2</h2>
-					<p><b>Date (JP):</b> Mar 15, 2024 ~ Apr 21, 2024</p>
-					<p><b>Characters: </b> Alfons 5★, Elbert 5★, Roger 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="jude ellis">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g32.jpg">
-				<div class="gacha-contents">
-					<h2>会報誌表紙記念IFC</h2>
-					<p><b>Date (JP):</b> Mar 2, 2024 ~ Mar 31, 2024</p>
-					<p><b>Characters: </b> Jude 5★, Ellis 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william harrison liam">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g31.jpg">
-				<div class="gacha-contents">
-					<h2>1st Anniversary Part1</h2>
-					<p><b>Date (JP):</b> Mar 1, 2024 ~ Apr 7, 2024</p>
-					<p><b>Characters: </b> Liam 5★, William 5★, Harrison 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="victor">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g30.jpg">
-				<div class="gacha-contents">
-					<h2>Victor Pickup</h2>
-					<p><b>Date (JP):</b> Feb 12, 2024 ~ Feb 26, 2024</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william jude">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g9_2.jpg">
-				<div class="gacha-contents">
-					<h2>魅惑の豪華客船 (rerun)</h2>
-					<p><b>Date (JP):</b> Feb 9, 2024 ~ Feb 18, 2024</p>
-					<p><b>Characters: </b> Jude 5★, William 4★, Victor 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="jude alfons harrison">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g29.jpg">
-				<div class="gacha-contents">
-					<h2>Dear My Valentine</h2>
-					<p><b>Date (JP):</b> Feb 2, 2024 ~ Feb 29, 2024</p>
-					<p><b>Characters: </b> Alfons 5★, Jude 4★, Harrison 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="jude ellis">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g28.jpg">
-				<div class="gacha-contents">
-					<h2>Style Change Part 2</h2>
-					<p><b>Date (JP):</b> Jan 20, 2024 ~ Feb 18, 2024</p>
-					<p><b>Characters: </b> Ellis 5★, Jude 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="elbert">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g27.jpg">
-				<div class="gacha-contents">
-					<h2>Elbert Pickup</h2>
-					<p><b>Date (JP):</b> Jan 16, 2024 ~ Jan 31, 2024</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william victor">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g26.jpg">
-				<div class="gacha-contents">
-					<h2>Style Change Part 1</h2>
-					<p><b>Date (JP):</b> Jan 3, 2024 ~ Jan 31, 2024</p>
-					<p><b>Characters: </b> Victor 5★, William 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g25.jpg">
-				<div class="gacha-contents">
-					<h2>Dream New Year</h2>
-					<p><b>Date (JP):</b> Jan 1, 2024 ~ Jan 10, 2024</p>
-					<p>Rate up on past gacha</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="alfons elbert">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g17_2.jpg">
-				<div class="gacha-contents">
-					<h2>AGF記念 アルカナカード Part 3 (rerun)</h2>
-					<p><b>Date (JP):</b> Dec 26, 2023 ~ Dec 31, 2023</p>
-					<p><b>Characters: </b> Alfons 5★, Elbert 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="harrison jude">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g16_2.jpg">
-				<div class="gacha-contents">
-					<h2>AGF記念 アルカナカード Part 2 (rerun)</h2>
-					<p><b>Date (JP):</b> Dec 26, 2023 ~ Dec 31, 2023</p>
-					<p><b>Characters: </b> Jude 5★, Harrison 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william liam">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g15_2.jpg">
-				<div class="gacha-contents">
-					<h2>AGF記念 アルカナカード Part 1 (rerun)</h2>
-					<p><b>Date (JP):</b> Dec 26, 2023 ~ Dec 31, 2023</p>
-					<p><b>Characters: </b> Liam 5★, William 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="harrison liam elbert">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g24.jpg">
-				<div class="gacha-contents">
-					<h2>Winter Date</h2>
-					<p><b>Date (JP):</b> Dec 16, 2023 ~ Jan 5, 2024</p>
-					<p><b>Characters: </b> Elbert 5★, Harrison 4★, Liam 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="jude">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g23.jpg">
-				<div class="gacha-contents">
-					<h2>Jude Pickup</h2>
-					<p><b>Date (JP):</b> Dec 5, 2023 ~ Jan 20, 2024</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="roger ellis william">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g22.jpg">
-				<div class="gacha-contents">
-					<h2>Christmas Date</h2>
-					<p><b>Date (JP):</b> Dec 1, 2023 ~ Dec 20, 2023</p>
-					<p><b>Characters: </b> Roger 5★, Ellis 4★, William 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="ellis victor">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g21.jpg">
-				<div class="gacha-contents">
-					<h2>Villain's Bath Time Part 2</h2>
-					<p><b>Date (JP):</b> Nov 16, 2023 ~ Dec 15, 2023</p>
-					<p><b>Characters: </b> Victor 5★, Ellis 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="roger">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g20.jpg">
-				<div class="gacha-contents">
-					<h2>Roger Pickup</h2>
-					<p><b>Date (JP):</b> Nov 15, 2023 ~ Nov 30, 2023</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="liam jude">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g19.jpg">
-				<div class="gacha-contents">
-					<h2>Villain's Bath Time Part 1</h2>
-					<p><b>Date (JP):</b> Nov 1, 2023 ~ Nov 30, 2023</p>
-					<p><b>Characters: </b> Jude 5★, Liam 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="ellis victor">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g18.jpg">
-				<div class="gacha-contents">
-					<h2>Villain's Halloween Night Part 2</h2>
-					<p><b>Date (JP):</b> Oct 3, 2023 ~ Oct 31, 2023</p>
-					<p><b>Characters: </b> Ellis 5★, Victor 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="alfons elbert">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g17.jpg">
-				<div class="gacha-contents">
-					<h2>AGF記念 アルカナカード Part 3</h2>
-					<p><b>Date (JP):</b> Oct 31, 2023 ~ Oct 31, 2023</p>
-					<p><b>Characters: </b> Alfons 5★, Elbert 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="harrison jude">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g16.jpg">
-				<div class="gacha-contents">
-					<h2>AGF記念 アルカナカード Part 2</h2>
-					<p><b>Date (JP):</b> Oct 1, 2023 ~ Oct 31, 2023</p>
-					<p><b>Characters: </b> Jude 5★, Harrison 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william liam">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g15.jpg">
-				<div class="gacha-contents">
-					<h2>AGF記念 アルカナカード Part 1</h2>
-					<p><b>Date (JP):</b> Oct 1, 2023 ~ Oct 31, 2023</p>
-					<p><b>Characters: </b> Liam 5★, William 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="elbert roger">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g14.jpg">
-				<div class="gacha-contents">
-					<h2>Villain's Halloween Night Part 1</h2>
-					<p><b>Date (JP):</b> Sep 22, 2023 ~ Oct 22, 2023</p>
-					<p><b>Characters: </b> Elbert 5★, Roger 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="liam">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g13.jpg">
-				<div class="gacha-contents">
-					<h2>Liam Pickup</h2>
-					<p><b>Date (JP):</b> Sep 9, 2023 ~ Sep 20, 2023</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="harrison victor elbert">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g12.jpg">
-				<div class="gacha-contents">
-					<h2>Villain's Routine</h2>
-					<p><b>Date (JP):</b> Sep 3, 2023 ~ Sep 30, 2023</p>
-					<p><b>Characters: </b> Harrison 5★, Victor 4★, Elbert 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="alfons">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g11.jpg">
-				<div class="gacha-contents">
-					<h2>Alfons Pickup</h2>
-					<p><b>Date (JP):</b> Aug 5, 2023 ~ Aug 20, 2023</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="alfons roger ellis">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g10.jpg">
-				<div class="gacha-contents">
-					<h2>Summer Temptation</h2>
-					<p><b>Date (JP):</b> Aug 3, 2023 ~ Aug 31, 2023</p>
-					<p><b>Characters: </b> Ellis 5★, Roger 4★, Alfons 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william jude">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g9.jpg">
-				<div class="gacha-contents">
-					<h2>魅惑の豪華客船</h2>
-					<p><b>Date (JP):</b> Jul 3, 2023 ~ Jul 31, 2023</p>
-					<p><b>Characters: </b> Jude 5★, William 4★, Victor 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="ellis">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g8.jpg">
-				<div class="gacha-contents">
-					<h2>Ellis Pickup</h2>
-					<p><b>Date (JP):</b> Jul 1, 2023 ~ Jul 15, 2023</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william liam">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g7.jpg">
-				<div class="gacha-contents">
-					<h2>Wedding Lily Part 2</h2>
-					<p><b>Date (JP):</b> Jun 20, 2023 ~ Jul 20, 2023</p>
-					<p><b>Characters: </b>William 5★, Liam 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="harrison elbert">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g6.jpg">
-				<div class="gacha-contents">
-					<h2>Wedding Lily Part 1</h2>
-					<h3>(Wedding Lilies Vol. 1)</h3>
-					<p><b>Date (JP):</b> Jun 7, 2023 ~ Jun 30, 2023</p>
-					<p><b>Date (EN):</b> Jun 6, 2024 ~ Jun 29, 2024</p>
-					<p><b>Characters: </b>Elbert 5★, Harrison 5★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="harrison">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g5.jpg">
-				<div class="gacha-contents">
-					<h2>Harrison Pickup</h2>
-					<h3>(Harrison's Spotlight)</h3>
-					<p><b>Date (JP):</b> May 29, 2023 ~ Jun 13, 2023</p>
-					<p><b>Date (EN):</b> May 28, 2023 ~ Jun 8, 2023</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="alfons victor">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g4.jpg">
-				<div class="gacha-contents">
-					<h2>素顔のあなた</h2>
-					<h3>(Hidden Talents)</h3>
-					<p><b>Date (JP):</b> May 12, 2023 ~ Jun 6, 2023</p>
-					<p><b>Date (EN):</b> May 12, 2024 ~ Jun 6, 2023</p>
-					<p><b>Characters: </b>Victor 5★, Alfons 4★, Ellis 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g3.jpg">
-				<div class="gacha-contents">
-					<h2>William Pickup</h2>
-					<h3>(William's Spotlight)</h3>
-					<p><b>Date (JP):</b> Apr 23, 2023 ~ May 8, 2023</p>
-					<p><b>Date (EN):</b> Apr 22, 2024 ~ May 7, 2024</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="harrison liam">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g2.jpg">
-				<div class="gacha-contents">
-					<h2>甘い誘惑</h2>
-					<h3>(Sweet Seductions)</h3>
-					<p><b>Date (JP):</b> Apr 20, 2023 ~ May 15, 2023</p>
-					<p><b>Date (EN):</b> Apr 18, 2024 ~ May 13, 2024</p>
-					<p><b>Characters: </b>Harrison 5★, Liam 4★, Elbert 3★</p>
-				</div>
-			</div>
-			<div class="gacha-banner" character="william harrison liam elbert victor">
-				<img src="https://storage.googleapis.com/ikemen-villains-archive/gacha_jpg/g1.jpg">
-				<div class="gacha-contents">
-					<h2>リリース記念カード</h2>
-					<h3>(Release Celebration Card)</h3>
-					<p><b>Date (JP):</b> Mar 28, 2023 ~ Apr 28, 2023</p>
-					<p><b>Date (EN):</b> Apr 8, 2024 ~ May 30, 2024</p>
-					<p><b>Characters: </b>Liam 5★, Harrison 5★, William 5★, Elbert 5★, Victor 5★</p>
+				<div class="pager">
+					<div class="firstPage disabled">&laquo;</div>
+					<div class="previousPage disabled">&lsaquo;</div>
+					<div class="pageNumbers"></div>
+					<div class="nextPage">&rsaquo;</div>
+					<div class="lastPage">&raquo;</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--Footer-->
-	<footer>
-		<script>
-			function addID(){
-		  		gachaList = document.querySelectorAll(".gacha-banner");
-		  		for(let i = 0; i < gachaList.length; i++)
-		  		{
-		  			gachaList[i].id = i;
-		  		}	
-			}
-			function sort_list(o){
-				
-			  var order = o;
-			  
-			  if(order == 'ascend')
-				{
-			    tinysort('.gacha-banner',{attr: 'id',  order: 'asc'});
-			  }
-			  else if(order == 'descend')
-				{
-			    tinysort('.gacha-banner',{attr: 'id',  order: 'desc'});
-			  }
-			}
-		</script>
-		<p> 当ページは、株式会社サイバード「イケメンヴィラン」の画像を使用しております。
-			使用画像の転載・配布等は禁止しております。
-		©CYBIRD</p>
-		<p> This page uses images from 「Ikémen Villains」 by CYBIRD Co., Ltd. Reproduction or distribution of the images used is prohibited.
-		©CYBIRD</p>
-	</footer>
-</body>
-</html>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+		<script src='https://cdn.rawgit.com/mrk-j/paginga/v0.8.1/paginga.jquery.min.js'></script>
+		<script  src="js/gachapage.js"></script>
+		<!--Footer-->
+		<footer>
+			<p> 当ページは、株式会社サイバード「イケメンヴィラン」の画像を使用しております。
+				使用画像の転載・配布等は禁止しております。
+			©CYBIRD</p>
+			<p> This page uses images from 「Ikémen Villains」 by CYBIRD Co., Ltd. Reproduction or distribution of the images used is prohibited.
+			©CYBIRD</p>
+		</footer>
+	</body>
+	</html>
