@@ -45,7 +45,11 @@
 	"time-5-jp",
 	"time-6-jp",
 	"time-7-jp",
-	"time-8-jp"
+	"time-8-jp",
+	"time-9-jp",
+	"time-10-jp",
+	"time-11-jp"
+
 	];
 
 	var ids_en = [
@@ -55,7 +59,7 @@
 	"time-4-en",
 	"time-5-en",
 	"time-6-en",
-	"time-7-en",
+	"time-7-en"
 	];
 
 	var jp_type = "c";
@@ -78,7 +82,7 @@
 				if (!times_jp[i + 1]) {
 					break;
 				}
-				if(count_jp == 1 || count_jp == 4 || count_jp == 6)
+				if(count_jp == 1 || count_jp == 4 || count_jp == 6 || count_jp == 8)
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Story x2 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
