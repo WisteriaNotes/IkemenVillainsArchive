@@ -140,7 +140,10 @@ html{
 		#Roger:not(:checked) ~ .filters #roger-button,
 		#Jude:not(:checked) ~ .filters #jude-button,
 		#Ellis:not(:checked) ~ .filters #ellis-button,
-		#Victor:not(:checked) ~ .filters #victor-button
+		#Victor:not(:checked) ~ .filters #victor-button,
+		#Darius:not(:checked) ~ .filters #darius-button,
+		#Nica:not(:checked) ~ .filters #nica-button,
+		#Ring:not(:checked) ~ .filters #ring-button
 		{
 			opacity: .5;
 		}
@@ -154,7 +157,10 @@ html{
 		#Roger:checked ~ .paginate > .grid > :not([character~="roger"]),
 		#Jude:checked ~ .paginate > .grid > :not([character~="jude"]),
 		#Ellis:checked ~ .paginate > .grid > :not([character~="ellis"]),
-		#Victor:checked ~ .paginate > .grid > :not([character~="victor"])
+		#Victor:checked ~ .paginate > .grid > :not([character~="victor"]),
+		#Darius:checked ~ .paginate > .grid > :not([character~="darius"]),
+		#Nica:checked ~ .paginate > .grid > :not([character~="nica"]),
+		#Ring:checked ~ .paginate > .grid > :not([character~="ring"])
 		{
 			display: none;
 		}
