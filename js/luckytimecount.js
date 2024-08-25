@@ -117,7 +117,7 @@
 				if (!times_en[i + 1]) {
 					break;
 				}
-				else if(count_en != 0 || count_en != 6)
+				else if(count_en != 0 && count_en != 6)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b> x2 - </b>" + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
