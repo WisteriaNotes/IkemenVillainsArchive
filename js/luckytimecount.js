@@ -1,12 +1,16 @@
 	//Lucky Time Calc
 	const timeStr_jp = [
-	"2024-09-06T12:00+09:00","2024-09-06T23:59+09:00",
-	"2024-09-07T12:00+09:00","2024-09-07T23:59+09:00",
-	"2024-09-08T12:00+09:00","2024-09-08T23:59+09:00",
-	"2024-09-09T12:00+09:00","2024-09-09T23:59+09:00",
-	"2024-09-19T12:00+09:00","2024-09-10T23:59+09:00",
-	"2024-09-11T12:00+09:00","2024-09-11T23:59+09:00",
-	"2024-09-12T12:00+09:00","2024-09-12T22:59+09:00",
+	"2024-09-13T16:00+09:00","2024-09-13T23:59+09:00",
+	"2024-09-14T05:00+09:00","2024-09-15T04:59+09:00",
+	"2024-09-15T18:00+09:00","2024-09-15T23:59+09:00",
+	"2024-09-16T18:00+09:00","2024-09-16T23:59+09:00",
+	"2024-09-17T05:00+09:00","2024-09-18T04:59+09:00",
+	"2024-09-18T18:00+09:00","2024-09-18T23:59+09:00",
+	"2024-09-20T05:00+09:00","2024-09-21T04:59+09:00",
+	"2024-09-21T18:00+09:00","2024-09-21T23:59+09:00",
+	"2024-09-22T05:00+09:00","2024-09-23T04:59+09:00",
+	"2024-09-23T18:00+09:00","2024-09-23T23:59+09:00",
+	"2024-09-25T18:00+09:00","2024-09-25T22:59+09:00"
 
 	];
 	
@@ -69,7 +73,7 @@
 	"time-11-en"
 	];
 
-	var jp_type = "s";
+	var jp_type = "c";
 	var en_type = "c";
 
 	switch(jp_type){
@@ -95,22 +99,22 @@
 				if (!times_jp[i + 1]) {
 					break;
 				}
-				if(count_jp == 2 || count_jp == 4 || count_jp == 6 || count_jp == 9 )
+				if(count_jp == 1 || count_jp == 4 || count_jp == 6 || count_jp == 8 )
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Story x2 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
 				}
-				else if(count_jp == 10)
+				/*else if(count_jp == 10)
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Escort x3 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
-				}
+				}*/
 				/*else if(count_jp == 4)
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Story x3 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
 				}*/
-				else if(count_jp == 0 || count_jp == 1 || count_jp == 3 || count_jp == 5 || count_jp == 7 || count_jp == 8)
+				else if(count_jp == 0 || count_jp == 2 || count_jp == 3 || count_jp == 5 || count_jp == 7 || count_jp == 9 || count_jp == 10)
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Escort x2 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
