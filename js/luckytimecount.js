@@ -69,7 +69,7 @@
 	];
 
 	var jp_type = "s";
-	var en_type = "c";
+	var en_type = "s";
 
 	switch(jp_type){
 		case "s":
