@@ -12,14 +12,14 @@
 	
 
 	const timeStr_en = [
-	"2024-12-20T18:00-08:00","2024-12-21T06:00-08:00",
-	"2024-12-21T18:00-08:00","2024-12-22T06:00-08:00",
-	"2024-12-22T08:00-08:00","2024-12-23T08:00-08:00",
-	"2024-12-24T08:00-08:00","2024-12-24T20:00-08:00",
-	"2024-12-25T08:00-08:00","2024-12-25T20:00-08:00",
-	"2024-12-26T08:00-08:00","2024-12-26T20:00-08:00",
-	"2024-12-28T08:00-08:00","2024-12-29T02:00-08:00",
-	"2024-12-29T18:00-08:00","2024-12-30T18:00-08:00"
+	"2024-12-30T18:00-08:00","2024-12-31T18:00-08:00",
+	"2024-12-31T18:00-08:00","2025-01-01T00:00-08:00",
+	"2025-01-02T00:00-08:00","2025-01-03T00:00-08:00",
+	"2025-01-03T08:00-08:00","2025-01-03T20:00-08:00",
+	"2025-01-05T00:00-08:00","2025-01-06T00:00-08:00",
+	"2025-01-06T08:00-08:00","2025-01-06T20:00-08:00",
+	"2025-01-07T00:00-08:00","2025-01-08T00:00-08:00",
+	"2025-01-08T18:00-08:00","2025-01-09T18:00-08:00"
 	];
 
 	const times_jp = [];
@@ -67,7 +67,7 @@
 	];
 
 	var jp_type = "s";
-	var en_type = "s";
+	var en_type = "c";
 
 	switch(jp_type){
 		case "s":
@@ -140,22 +140,22 @@
 				if (!times_en[i + 1]) {
 					break;
 				}
-				if(count_en == 0 || count_en == 2 || count_en == 4 || count_en == 6)
+				if(count_en == 2 || count_en == 4 || count_en == 6)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Story x2 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
 				}
-				else if(count_en == 8)
+				else if(count_en == 0)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Story x3 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
 				}
-				else if(count_en == 1 || count_en == 3 || count_en == 5 || count_en == 7 || count_en == 9)
+				else if(count_en == 1 || count_en == 3 || count_en == 5)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Escort x2 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
 				}
-				else if(count_en == 10)
+				else if(count_en == 7)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Escort x3 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
