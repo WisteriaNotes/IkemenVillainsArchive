@@ -1,5 +1,16 @@
 	//Lucky Time Calc
 	const timeStr_jp = [
+	"2025-01-10T12:00+09:00","2025-01-10T23:59+09:00",
+	"2025-01-11T18:00+09:00","2025-01-11T23:59+09:00",
+	"2025-01-12T05:00+09:00","2025-01-13T04:59+09:00",
+	"2025-01-13T18:00+09:00","2025-01-13T23:59+09:00",
+	"2025-01-14T05:00+09:00","2025-01-15T04:59+09:00",
+	"2025-01-15T18:00+09:00","2025-01-15T23:59+09:00",
+	"2025-01-17T05:00+09:00","2025-01-18T04:59+09:00",
+	"2025-01-18T18:00+09:00","2025-01-18T23:59+09:00",
+	"2025-01-10T05:00+09:00","2025-01-20T04:59+09:00",
+	"2025-01-20T18:00+09:00","2025-01-20T23:59+09:00",
+	"2025-01-21T18:00+09:00","2025-01-21T22:59+09:00"
 
 	];
 	
@@ -59,7 +70,7 @@
 	"time-11-en"
 	];
 
-	var jp_type = "s";
+	var jp_type = "c";
 	var en_type = "c";
 
 	switch(jp_type){
@@ -85,22 +96,22 @@
 				if (!times_jp[i + 1]) {
 					break;
 				}
-				if(count_jp == 1 || count_jp == 4 || count_jp == 6 || count_jp == 6 || count_jp == 9  )
+				if(count_jp == 2 || count_jp == 4 || count_jp == 6 || count_jp == 8  )
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Story x2 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
 				}
-				else if(count_jp == 8)
+				/*else if(count_jp == 8)
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Escort x3 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
-				}
+				}*/
 				/*else if(count_jp == 4)
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Story x3 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
 				}*/
-				else if(count_jp == 0 || count_jp == 2 || count_jp == 3 || count_jp == 5 || count_jp == 7 || count_jp == 10)
+				else if(count_jp == 0 || count_jp == 1 || count_jp == 3 || count_jp == 5 || count_jp == 7 || count_jp == 9 || count_jp == 10)
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Escort x2 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
