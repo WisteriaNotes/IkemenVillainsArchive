@@ -16,13 +16,16 @@
 	
 
 	const timeStr_en = [
-	"2025-01-10T18:00-08:00","2025-01-11T18:00-08:00",
-	"2025-01-11T20:00-08:00","2025-01-12T00:00-08:00",
-	"2025-01-12T18:00-08:00","2025-01-13T00:00-08:00",
-	"2025-01-14T08:00-08:00","2025-01-15T20:00-08:00",
-	"2025-01-17T08:00-08:00","2025-01-17T00:00-08:00",
-	"2025-01-18T08:00-08:00","2025-01-19T20:00-08:00",
-	"2025-01-19T18:00-08:00","2025-01-20T00:00-08:00"
+	"2025-01-21T18:00-08:00","2025-01-22T18:00-08:00",
+	"2025-01-22T18:00-08:00","2025-01-23T00:00-08:00",
+	"2025-01-23T00:00-08:00","2025-01-24T00:00-08:00",
+	"2025-01-24T08:00-08:00","2025-01-24T20:00-08:00",
+	"2025-01-25T00:00-08:00","2025-01-26T00:00-08:00",
+	"2025-01-26T08:00-08:00","2025-01-26T16:00-08:00",
+	"2025-01-27T00:00-08:00","2025-01-28T00:00-08:00",
+	"2025-01-28T08:00-08:00","2025-01-28T16:00-08:00",
+	"2025-01-29T00:00-08:00","2025-01-30T00:00-08:00",
+	"2025-01-30T18:00-08:00","2025-01-31T18:00-08:00"
 	];
 
 	const times_jp = [];
@@ -70,7 +73,7 @@
 	];
 
 	var jp_type = "c";
-	var en_type = "s";
+	var en_type = "c";
 
 	switch(jp_type){
 		case "s":
@@ -143,7 +146,7 @@
 				if (!times_en[i + 1]) {
 					break;
 				}
-				if(count_en == 2 || count_en == 4 || count_en == 6)
+				if(count_en == 2 || count_en == 4 || count_en == 6 || count_en == 8)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Story x2 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
@@ -153,12 +156,12 @@
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Story x3 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
 				}
-				else if(count_en == 1 || count_en == 3 || count_en == 5)
+				else if(count_en == 1 || count_en == 3 || count_en == 5 || count_en == 7)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Escort x2 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
 				}
-				else if(count_en == 7)
+				else if(count_en == 9)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Escort x3 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
