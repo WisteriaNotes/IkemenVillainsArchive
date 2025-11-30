@@ -1,18 +1,18 @@
 	//Lucky Time Calc
 	const timeStr_jp = [
-	"2025-11-10T18:00+09:00","2025-11-10T23:59+09:00",
-	"2025-11-11T18:00+09:00","2025-11-11T23:59+09:00",
-	"2025-11-12T18:00+09:00","2025-11-12T23:59+09:00",
-	"2025-11-13T18:00+09:00","2025-11-13T23:59+09:00",
-	"2025-11-14T18:00+09:00","2025-11-14T23:59+09:00",
-	"2025-11-15T12:00+09:00","2025-11-15T23:59+09:00",
-	"2025-11-16T12:00+09:00","2025-11-16T23:59+09:00",
-	"2025-11-17T18:00+09:00","2025-11-17T23:59+09:00",
-	"2025-11-18T18:00+09:00","2025-11-18T23:59+09:00",
-	"2025-11-19T18:00+09:00","2025-11-19T23:59+09:00",
-	"2025-11-20T18:00+09:00","2025-11-20T23:59+09:00",
-	"2025-11-21T18:00+09:00","2025-11-21T22:59+09:00"
-
+	"2025-11-24T12:00+09:00","2025-11-26T04:59+09:00",
+	"2025-11-24T16:00+09:00","2025-11-24T23:59+09:00",
+	"2025-11-25T18:00+09:00","2025-11-25T23:59+09:00",
+	"2025-11-26T18:00+09:00","2025-11-26T23:59+09:00",
+	"2025-11-27T18:00+09:00","2025-11-27T23:59+09:00",
+	"2025-11-28T18:00+09:00","2025-11-28T23:59+09:00",
+	"2025-11-29T05:00+09:00","2025-11-30T04:59+09:00",
+	"2025-11-30T18:00+09:00","2025-11-30T23:59+09:00",
+	"2025-12-01T05:00+09:00","2025-12-02T04:59+09:00",
+	"2025-12-02T18:00+09:00","2025-12-02T23:59+09:00",
+	"2025-12-03T05:00+09:00","2025-12-04T04:59+09:00",
+	"2025-12-04T18:00+09:00","2025-12-04T23:59+09:00",
+	"2025-12-05T18:00+09:00","2025-12-05T22:59+09:00"
 	
 	];
 	
@@ -71,8 +71,8 @@
 	"time-11-en"
 	];
 
-	var jp_type = "s";
-	var en_type = "s";
+	var jp_type = "c";
+	var en_type = "c";
 
 	switch(jp_type){
 		case "s":
@@ -97,12 +97,12 @@
 				if (!times_jp[i + 1]) {
 					break;
 				}
-				if(count_jp == 1 || count_jp == 4 || count_jp == 6 || count_jp == 9)
+				if(count_jp == 0 || count_jp == 4 || count_jp == 6 || count_jp == 8 || count_jp == 10)
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Story x2 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
 				}
-				else if(count_jp == 0 || count_jp == 3 || count_jp == 10)
+				else if(count_jp == 0 || count_jp == 7 || count_jp == 11)
 				{
 					document.getElementById(ids_jp[count_jp]).innerHTML = "<b>Escort x3 - </b> " + times_jp[i] + " ~ " + times_jp[i + 1];
 					count_jp++;
@@ -153,7 +153,7 @@
 				if (!times_en[i + 1]) {
 					break;
 				}
-				if(count_en == 2 || count_en == 4)
+				if(count_en == 2 || count_en == 4 || count_en == 6)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Story x2 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
@@ -163,14 +163,14 @@
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Story x3 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
 				}
-				else if(count_en == 1 || count_en == 3 || count_en == 5)
-				{
-					document.getElementById(ids_en[count_en]).innerHTML = "<b>Escort x2 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
-					count_en++;
-				}
-				else if( count_en == 6)
+				else if(count_en == 7)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Escort x3 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
+					count_en++;
+				}
+				else
+				{
+					document.getElementById(ids_en[count_en]).innerHTML = "<b>Escort x2 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
 				}
 			}
