@@ -18,12 +18,13 @@
 	
 
 	const timeStr_en = [
-	"2026-02-10T18:00-08:00","2026-02-11T06:00-08:00",
-	"2026-02-11T18:00-08:00","2026-02-12T18:00-08:00",
-	"2026-02-13T08:00-08:00","2026-02-14T08:00-08:00",
-	"2026-02-14T08:00-08:00","2026-02-15T08:00-08:00",
-	"2026-02-15T08:00-08:00","2026-02-15T20:00-08:00",
-	"2026-02-16T18:00-08:00","2026-02-17T18:20-08:00"
+	"2026-03-12T18:00-07:00","2026-03-13T00:00-07:00",
+	"2026-03-13T00:00-07:00","2026-03-14T10:00-07:00",
+	"2026-03-14T08:00-07:00","2026-03-15T20:00-07:00",
+	"2026-03-15T00:00-07:00","2026-03-16T00:00-07:00",
+	"2026-03-16T08:00-07:00","2026-03-17T08:00-07:00",
+	"2026-03-17T00:00-07:00","2026-03-18T00:20-07:00",
+	"2026-03-18T18:00-07:00","2026-03-19T18:20-07:00"
 	];
 
 	const times_jp = [];
@@ -72,7 +73,7 @@
 	];
 
 	var jp_type = "c";
-	var en_type = "s";
+	var en_type = "c";
 
 	switch(jp_type){
 		case "s":
@@ -153,17 +154,17 @@
 				if (!times_en[i + 1]) {
 					break;
 				}
-				if(count_en == 2 || count_en == 4 || count_en == 6)
+				if( count_en == 3 || count_en == 5)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Story x2 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
 				}
-				else if(count_en == 0)
+				else if(count_en == 1)
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Story x3 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
 				}
-				else if(count_en == 7)
+				else if(count_en == 0 || count_en == 6) 
 				{
 					document.getElementById(ids_en[count_en]).innerHTML = "<b>Escort x3 - </b> " + times_en[i] + " ~ " + times_en[i + 1];
 					count_en++;
